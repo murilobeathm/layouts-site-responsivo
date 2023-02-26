@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    grid-area: header;
+    background-color: bisque;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+     'header header header header header header'
+     'left middle middle middle middle right'
+     'footer footer footer footer footer footer';
+     /*dividindo a div container em seis colunas e tres linhas*/
+}
+
+.left, .middle, .right{
+    padding: 10px;
+    height: 300px;
+}
+
+.left{
+    grid-area: left;
+    background-color: blanchedalmond;
+
+}
+
+.middle{
+    grid-area: middle;
+    background-color: cornflowerblue;
+}
+
+.right{
+    grid-area: rigth;
+    background-color: darkgreen;
+}

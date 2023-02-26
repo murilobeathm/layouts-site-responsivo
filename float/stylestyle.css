@@ -30,7 +30,7 @@ body{
     background-color: #89b0ae;
 }
 
-.column.midle{
+.column.middle{
     width: 50%;
     background-color: #faf9f9;
 }
@@ -49,7 +49,7 @@ body{
 
 /* para a pagina ficar responsiva*/
 @media(max-width: 600px){
-    .column.side, .column.midle{
+    .column.side, .column.middle{
         width: 100%;
     }
 

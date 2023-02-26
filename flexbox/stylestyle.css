@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px
+}
+
+.row{
+    display: -webkit-flex; 
+    display: flex;
+}
+
+.column{
+    padding: 10px;
+    height: 300px;
+
+}
+
+.column.side{
+    -webkit-flex: 1; /* essas tags é para ser reconhecida em todos os browser, o (-ms)  também*/
+    -ms-flex: 1;
+    flex: 1;
+    background-color: blueviolet;
+}
+
+#column_rigth{
+    background-color: aquamarine;
+}
+
+.column.middle{
+    flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    background-color: beige;
+}
+
+.footer{
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .row{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    h2{
+        font-size: 40px;
+    }
+}
